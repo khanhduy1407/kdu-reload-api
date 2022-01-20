@@ -1,0 +1,33 @@
+{
+  "name": "kdu-reload-api",
+  "version": "2.2.0",
+  "description": "hot reload api for *.kdu components",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "buble src -o dist",
+    "test": "jest",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhduy1407/kdu-reload-api.git"
+  },
+  "keywords": [
+    "kdu",
+    "reload"
+  ],
+  "author": "NKDuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khanhduy1407/kdu-reload-api/issues"
+  },
+  "homepage": "https://github.com/khanhduy1407/kdu-reload-api",
+  "devDependencies": {
+    "buble": "^0.16.0",
+    "jest": "^21.2.1",
+    "kdu": "^2.5.13"
+  }
+}
